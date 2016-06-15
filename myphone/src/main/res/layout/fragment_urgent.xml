@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zzptc.zhongxin.myphone.fragment.UrgentFragment"
+    android:background="#1545a4">
+
+    <RelativeLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="#1545a4">
+
+
+        <ImageView
+            android:id="@+id/iv_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/open_first"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_zhuyi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注意：请确保手机信号畅通，并授予百度手机卫士发送短信、读取位置信息的权限。"
+        android:layout_below="@id/ll_top"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="50px"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_zhuyi">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:layout_marginTop="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginLeft="20px"
+            android:layout_marginBottom="30px">
+
+
+            <TextView
+                android:id="@+id/tv_urgent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="紧急联系人"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="30px"
+                android:textSize="16dp"/>
+
+            <View
+                android:id="@+id/v_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/tv_urgent"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="10px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                />
+
+            <ListView
+                android:id="@+id/lv_urgent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v_line"
+                android:scrollbars="none"
+                android:overScrollMode="never"
+                android:layout_marginTop="20px"
+                android:layout_marginRight="30px"
+                android:layout_marginLeft="30px">
+
+            </ListView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/warte_mark_light"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"/>
+
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:src="@drawable/urgent_shape"
+            android:layout_marginTop="70px"
+            android:layout_marginLeft="10px"/>
+
+
+        <ImageView
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:src="@drawable/urgent_shape"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="70px"
+            android:layout_marginRight="10px"/>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

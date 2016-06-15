@@ -1,0 +1,1 @@
+include ':app', ':fragment', ':myphone', ':demo', ':recyclerview', ':mylove'

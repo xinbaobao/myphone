@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#1E62D7">
+
+    <ImageView
+        android:id="@+id/iv_splash3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/splash_third_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/splash_bg_center_three"
+        android:layout_below="@id/iv_splash3"
+        />
+
+    <ImageView
+        android:id="@+id/iv_tu3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/splash_third_center"
+        android:layout_below="@id/iv_splash3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_yitu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_tu3"
+        android:text="@string/agress"
+        android:textColor="#689CF5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_jiaru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_yitu"
+        android:text="@string/jiaru"
+        android:textColor="#689CF5"
+        android:layout_centerHorizontal="true"
+        android:textSize="12dp"
+        android:button="@drawable/checkbox_selector"
+        android:padding="5dp"
+        android:checked="true"
+        />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb_jiaru"
+        android:layout_centerHorizontal="true"
+        android:text="立即体验"
+        android:background="#3B89FF"
+        />
+
+</RelativeLayout>

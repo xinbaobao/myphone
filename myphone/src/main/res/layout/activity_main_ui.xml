@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zzptc.zhongxin.myphone.activity.MainUiActivity"
+    android:background="#1545a4">
+
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        app:title="百度手机卫士"
+        android:background="#1545a4"
+        app:titleTextColor="@android:color/white"></android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/rl_rate"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@id/toolbars"
+        android:background="#1545a4">
+
+        <TextView
+            android:id="@+id/tv_rate"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:text="88"
+            android:textColor="@android:color/white"
+            android:textSize="80dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            />
+
+        <com.zzptc.zhongxin.myphone.view.RatingView
+            android:id="@+id/rv_rate"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true">
+
+        </com.zzptc.zhongxin.myphone.view.RatingView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_down"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_rate"
+        android:background="@android:color/white">
+
+        <android.support.v7.widget.GridLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="@android:color/darker_gray"
+            app:rowCount="2"
+            app:columnCount="3"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/tv_speedup"
+                android:background="@android:color/white"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:text="手机加速"
+                android:gravity="center"
+                android:drawablePadding="-20dp"
+                android:drawableTop="@mipmap/mobile_speedup"
+                android:layout_marginRight="1px"
+                android:layout_marginBottom="1px"
+            />
+            <TextView
+                android:background="@android:color/white"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:text="垃圾清理"
+                android:gravity="center"
+                android:drawablePadding="-20dp"
+                android:drawableTop="@mipmap/garbage_clean"
+                android:layout_marginRight="1px"
+                android:layout_marginBottom="1px"
+                />
+            <TextView
+                android:background="@android:color/white"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:text="安全防护"
+                android:gravity="center"
+                android:drawablePadding="-20dp"
+                android:drawableTop="@mipmap/security_guard"
+                android:layout_marginRight="1px"
+                android:layout_marginBottom="1px"
+                />
+            <TextView
+                android:id="@+id/tv_family"
+                android:background="@android:color/white"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:text="家人防护"
+                android:gravity="center"
+                android:drawablePadding="-20dp"
+                android:drawableTop="@mipmap/parent_protect"
+                android:layout_marginRight="1px"
+                android:layout_marginBottom="1px"
+                />
+            <TextView
+                android:id="@+id/tv_up"
+                android:background="@android:color/white"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:text="百宝箱"
+                android:gravity="center"
+                android:drawablePadding="-20dp"
+                android:drawableTop="@mipmap/treasure_box_up"
+                android:layout_marginRight="1px"
+                android:layout_marginBottom="1px"
+                />
+            <TextView
+                android:background="@android:color/white"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:gravity="center"
+
+                />
+
+        </android.support.v7.widget.GridLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

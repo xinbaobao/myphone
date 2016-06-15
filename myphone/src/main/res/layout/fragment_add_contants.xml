@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zzptc.zhongxin.myphone.fragment.AddContantsFragment"
+    android:background="@android:color/white">
+
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请添加紧急联系人和求救短信"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_text"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请输入手机号（最多添加3人）"
+            android:inputType="phone"/>
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/add_contacts"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"/>
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:text="确定"
+            android:textSize="13dp"
+            android:textColor="@android:color/white"
+            android:background="#1545a4"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:dividerHeight="5dp"
+        android:divider="@android:color/white">
+
+    </ListView>
+
+
+    <EditText
+        android:id="@+id/et_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我遇到危险，现在不方便打电话，请帮助我。"
+        android:layout_below="@id/lv_add"
+        android:textSize="16dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="30dp"
+        android:maxLength="40"
+        />
+
+    <TextView
+        android:id="@+id/tv_text0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20/40"
+        android:layout_below="@id/et_help"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="短信通知紧急联系人我已开启一键求救"
+        android:layout_above="@+id/btn_com"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:button="@drawable/checkbox_selector"
+        android:checked="true"
+        android:padding="10dp"
+        android:background="@null"
+        />
+
+    <Button
+        android:id="@+id/btn_com"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="完成"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="#1545a4"
+        android:textSize="18dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/my_phone"
+        android:title="我的手机"
+        />
+
+    <item
+        android:id="@+id/my_download"
+        android:title="我的下载"
+        />
+
+    <item
+        android:id="@+id/my_weishi"
+        android:title="关于卫士"
+        />
+
+</menu>

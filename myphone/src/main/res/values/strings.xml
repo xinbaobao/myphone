@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyPhone</string>
+    <string name="agress">同意《<u>安装许可协议</u>》</string>
+    <string name="jiaru">加入<u>用户体验改进计划</u></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
