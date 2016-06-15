@@ -70,7 +70,7 @@ public class Contact implements java.io.Serializable {
         this.attribute = attribute;
     }
     
-    public static viod main(String[] args){
+    public static void main(String[] args){
 
 		System.out.println("Hello zhongxin");
 		System.out.println("Hello xinqing");
