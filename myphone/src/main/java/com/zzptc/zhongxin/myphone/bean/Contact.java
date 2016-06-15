@@ -69,6 +69,22 @@ public class Contact implements java.io.Serializable {
     public void setAttribute(String attribute) {
         this.attribute = attribute;
     }
+    
+    public static viod main(String[] args){
+
+		System.out.println("Hello zhongxin");
+		System.out.println("Hello xinqing");
+		System.out.println("心情不好");
+		System.out.println("破天气");
+
+		System.out.println("株洲变珠海");
+		System.out.println("考试啦");
+		System.out.println("考完回家");
+
+
+
+
+	}
 
     @Override
     public String toString() {
